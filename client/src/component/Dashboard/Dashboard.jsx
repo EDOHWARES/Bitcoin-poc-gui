@@ -34,7 +34,7 @@ const Dashboard = ({ onBlockchainInfoClick }) => {
           <div
             key={index}
             onClick={section.onClick}
-            className={`flex flex-col min-w-[10rem] min-h-[10rem] items-center justify-center p-2 md:p-6 rounded-lg shadow-lg ${section.bg} hover:rotate-6 transition-transform cursor-pointer`}
+            className={`flex flex-col min-w-[9rem] min-h-[9rem] items-center justify-center p-2 md:p-6 rounded-lg shadow-lg ${section.bg} hover:rotate-6 transition-transform cursor-pointer`}
           >
             {section.icon}
             <h2 className="text-lg font-semibold mt-4">{section.title}</h2>
