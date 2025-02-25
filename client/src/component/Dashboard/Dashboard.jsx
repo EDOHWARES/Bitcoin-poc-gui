@@ -28,13 +28,13 @@ const Dashboard = ({ onBlockchainInfoClick }) => {
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-900 text-white p-6">
-      <h1 className="text-3xl font-bold mb-6">Welcome to Bitcoin POC GUI</h1>
-      <div className="grid grid-cols-2 gap-6 w-full max-w-4xl">
+      <h1 className="text-3xl font-bold mb-10 items-center text-center">Welcome to Bitcoin POC GUI</h1>
+      <div className="grid grid-cols-2 gap-6 w-full max-w-4xl items-center text-center">
         {sections.map((section, index) => (
           <div
             key={index}
             onClick={section.onClick}
-            className={`flex flex-col items-center justify-center p-6 rounded-lg shadow-lg ${section.bg} hover:scale-105 transition-transform cursor-pointer`}
+            className={`flex flex-col min-w-[10rem] min-h-[10rem] items-center justify-center p-2 md:p-6 rounded-lg shadow-lg ${section.bg} hover:rotate-6 transition-transform cursor-pointer`}
           >
             {section.icon}
             <h2 className="text-lg font-semibold mt-4">{section.title}</h2>
